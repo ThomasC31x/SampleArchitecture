@@ -1,0 +1,30 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+
+  <div style="margin-top: 45%; text-align: center;">
+    <h1>FLEX</h1>
+
+    <ion-item class="input-login ion-margin-top">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-login" style="margin-top: 10px">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input [(ngModel)]="password" type="password"></ion-input>
+    </ion-item>
+
+    <div class="ion-text-center ion-margin-top">
+      <ion-text (click)="createAccount()">create account</ion-text><br>
+      <ion-text (click)="forgotPassword()">forgot password?</ion-text><br>
+    </div>
+
+    <ion-button class="ion-margin-top" [disabled]="isReadyToConnect()" (click)="connect()">Connect</ion-button>
+  </div>
+
+</ion-content>

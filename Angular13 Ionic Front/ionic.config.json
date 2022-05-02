@@ -1,0 +1,7 @@
+{
+  "name": "Flex",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
